@@ -1,0 +1,80 @@
+:root {
+  --azul-encabezado: #6A92A5;
+  --fondo-principal: #D9C3A5;
+  --pie-pagina: #C47A5B;
+  --texto-vistoso: #FFF9F0;
+}
+
+/* Fondo fijo con imagen académica */
+body {
+  background-image: url('img/imagen2.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Translucidez para secciones sobre fondo */
+.fondo-translucido {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen destacada */
+.imagen-portada {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+.imagen-portada:hover {
+  transform: scale(1.02);
+}
+
+/* Encabezado */
+header {
+  background-color: var(--azul-encabezado);
+  color: var(--texto-vistoso);
+  padding: 100px 20px;
+}
+
+/* Navegación */
+.navbar {
+  background-color: var(--azul-encabezado);
+}
+.nav-link:hover {
+  color: var(--texto-vistoso) !important;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--pie-pagina);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--azul-encabezado);
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--pie-pagina);
+  color: white;
+}
+
+/* Sección experiencia con color personalizado */
+.seccion-experiencia {
+  background-color: #FFF9F0;
+  color: #6A92A5;
+}
+
+/* Alineación general de listas con fondo translúcido */
+.list-group-item {
+  border: none;
+  font-size: 1rem;
+}
